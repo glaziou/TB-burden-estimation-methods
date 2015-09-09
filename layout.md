@@ -1,5 +1,6 @@
 untitled.tex
 section_Historical_background_Incidence_surveys__.tex
+subsection_Case_definitions__.tex
 section_Incidence__.tex
 section_Prevalence__.tex
 section_Mortality__.tex
