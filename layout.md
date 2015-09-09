@@ -5,4 +5,3 @@ section_Incidence__.tex
 section_Prevalence__.tex
 section_Mortality__.tex
 section_Burden_of_drug_resistance__.tex
-section_Discussion_and_conclusions__.tex
