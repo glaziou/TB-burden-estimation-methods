@@ -11,6 +11,10 @@ The ultimate goal is to directly measure TB incidence from TB notifications in a
 
 $I=\frac{f(N)}{1-g}, g\in[0,1[$
 
+where $f$ denotes a cubic spline function in countries with large year-to-year fluctuations in $N$, or else, the identity function. The incidence series are completed using assumptions about improvements in CFR over time in countries with evidence of improvements in TB control performance such as an increased detection coverage over time or improved treatment outcomes:
+
+$0 < \lvert \frac{dI}{dt} \rvert < \lvert \frac{dM}{dt} \rvert $
+
 \item {Results from national TB prevalence surveys.} Incidence is estimated using prevalence survey results combined with either a dynamic model or estimates of the duration of disease. This method is used for 19 countries that accounted for 46\% of the estimated global number of incident cases in 2014.
 \item {Notifications in high-income countries adjusted by a standard factor to account for under-reporting and under-diagnosis.} This method is used for 73 countries (all high-income countries except the Netherlands and the United Kingdom), which accounted for 3\% of the estimated global number of incident cases in 2014.
 \item {Results from inventory/capture-recapture studies.} This method is used for 5 countries: Egypt, Iraq, the Netherlands, the United Kingdom and Yemen. They accounted for 0.5\% of the estimated global number of incident cases in 2014. 
@@ -19,4 +23,5 @@ $I=\frac{f(N)}{1-g}, g\in[0,1[$
 
 
 
+  
   
