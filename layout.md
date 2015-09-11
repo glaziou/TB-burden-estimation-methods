@@ -4,6 +4,7 @@ section_Incidence_Incidence_is_defined__.tex
 subsection_Case_notification_data_combined__.tex
 subsection_Results_from_national_TB__.tex
 subsection_Notifications_in_high_income__.tex
+subsection_Results_from_inventory_capture__.tex
 section_Prevalence__.tex
 section_Mortality__.tex
 section_Burden_of_drug_resistance__.tex
