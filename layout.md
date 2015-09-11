@@ -1,6 +1,6 @@
 untitled.tex
 section_Historical_background_Incidence_surveys__.tex
-section_Incidence_TB_incidence_has__.tex
+section_Incidence_Incidence_is_defined__.tex
 section_Prevalence__.tex
 section_Mortality__.tex
 section_Burden_of_drug_resistance__.tex
