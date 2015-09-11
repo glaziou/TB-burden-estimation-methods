@@ -1,0 +1,19 @@
+\subsection {Case notification data combined with expert opinion about case detection gaps.} Expert opinion, elicited in regional workshops or country missions, is used to estimate levels of under-reporting and under-diagnosis. Trends are estimated using either mortality data, surveys of the annual risk of infection or exponential interpolation using estimates of case detection gaps for three years. In this report, this method is used for 120 countries that accounted for 51\% of the estimated global number of incident cases in 2014. The estimation of case detection gaps is essentially based on an in-depth analysis of surveillance data, experts provide their educated best guess about the range of plausible detection gap $g$:
+
+$I=\frac{f(N)}{1-g}, g\in[0,1[$
+
+where $f$ denotes a cubic spline function in countries with large year-to-year fluctuations in $N$, or else, the identity function. The incidence series are completed using assumptions about improvements in CFR over time in countries with evidence of improvements in TB control performance such as an increased detection coverage over time or improved treatment outcomes. Calibration of estimates was done using mortality data where available. 
+
+$0 < \lvert \frac{dI}{dt} \rvert < \lvert \frac{dM}{dt} \rvert $
+
+A full description of the methods used in regional workshops where expert opinion was systematically elicited following an in-depth analysis of surveillance data is publicly available in a report of the workshop held for countries in the African Region (in Harare, Zimbabwe, December 2010\cite{WHO}). In some countries case reporting coverage changed significantly during the period 1990-2013 as a result of surveillance reforms (e.g. disease surveillance was thoroughly reformed after the SARS epidemic in China, the MoJ sector notified cases in Russia starting in the early 2000s). Trends in incidence were derived from repeat tuberculin survey results in Bhutan, India and Yemen and for 40 countries (including countries in Eastern Europe) from trends in mortality. 
+
+Distributions of the proportion of cases that were not reported in the three reference years were assumed to follow a Beta distribution, with the expected value $E$ and variance $V$ obtained using the method of moments\cite{Renyi2007}. Time series for the period 1990–2014 were built according to the characteristics of the levels of underreporting and under-diagnosis that were estimated for the three reference years. A cubic spline extrapolation of V and E, with knots set at the reference years, was used for countries with low-level or concentrated HIV epidemics. In countries with a generalized HIV epidemic, the trajectory of incidence from 1990 to the first reference year (usually 1997) was based on the annual rate of change in HIV prevalence. 
+
+If there were insufficient data to determine the factors leading to time-changes in case notifications, incidence was assumed to follow a horizontal trend going through the most recent estimate of incidence. 
+
+Limitations of the method included a generally small number of interviewed experts; lack of clarity about vested interests when eliciting expert opinion; lack of recognition of over-reporting (due to over-diagnosis,  e.g. in some countries of the former Soviet Union using large-scale systematic population screening); 
+incomplete data on laboratory quality and high proportion of patients with no bacteriological confirmation of diagnosis are a potential source of error in estimates.
+
+
+
