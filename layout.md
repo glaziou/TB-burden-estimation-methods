@@ -1,7 +1,6 @@
 untitled.tex
 section_Historical_background_Incidence_surveys__.tex
 section_Incidence_Incidence_is_defined__.tex
-subsection_Notifications_in_high_income__1.tex
 subsection_Notifications_in_high_income__.tex
 section_Prevalence__.tex
 section_Mortality__.tex
