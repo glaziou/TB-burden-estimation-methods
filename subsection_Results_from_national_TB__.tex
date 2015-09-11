@@ -1,0 +1,79 @@
+\subsection {Results from national TB prevalence surveys.} Incidence is estimated using prevalence survey results combined with either a dynamic model or estimates of the duration of disease. This method is used for 19 countries that accounted for 46\% of the estimated global number of incident cases in 2014.
+
+Incidence can be estimated using measurements from national surveys of the prevalence of TB disease combined with estimates of the duration of disease. Incidence is estimated as the prevalence of TB divided by the average duration of disease. 
+
+In practice, the duration of disease cannot be directly measured. For example, measurements of the duration of symptoms in prevalent TB cases that are detected during a prevalence survey are systematically biased towards lower values, since active case-finding truncates the natural history of undiagnosed disease. Measurements of the duration of disease in notified cases ignore the duration of disease among non-notified and untreated cases. 
+
+Literature reviews commissioned by the WHO Global Task Force on TB Impact Measurement have provided estimates of the duration of disease in untreated TB cases from the pre-chemotherapy era (before the 1950s). The best estimate of the mean duration of disease (for smear-positive cases and smear-negative cases combined) in HIV-negative individuals is about three years. However, the proportion of incident cases that remain untreated is unknown. There are few data on the duration of disease in HIV-positive individuals. 
+
+The assumed distributions of disease durations are shown in Table.
+
+\begin{table} 
+    \begin{tabular}{ c c }
+        \hline
+        Case category & Distribution of disease duration (year) \\ 
+        \hline
+        Notified, HIV-negative & Uniform $(0.2 - 2)$ \\ 
+        Not notified, HIV-negative & Uniform $(1 - 4)$ \\ 
+        Notified, HIV-positive & Uniform $(0.01 - 1)$ \\ 
+        Not notified, HIV-positive & Uniform $(0.01 - 0.2)$ \\ 
+        \hline
+    \end{tabular} 
+    \caption{Distribution of disease duration by case category} 
+\end{table}
+
+In countries with a high burden of HIV ...
+
+
+A second approach consists in estimating disease duration through a simple dynamical model with three compartments: susceptibles ($S$), untreated TB ($U$) and treated TB ($T$). The size of $U$ and $T$ is estimated from the prevalence survey findings. Transitions from $U$ to $T$ are determined as follows:
+
+$\frac{dU}{dt} = I - (\mu_u + \theta_u + \delta)U$
+
+Where $I$ denotes Incidence, μu+θu denote mortality (untreated) and self-cure (untreated), respectively, $\delta$ denotes the rate of removal from U through detection and treatment, $\mu_T + \theta_T$ denote mortality (treated) and cure, respectively. At equilibrium, the above two equations simplify to: 
+
+$I = \frac{U}{d_U}$
+
+$\delta U = \frac{T}{d_T}$
+
+And disease duration (untreated) is obtained from $d_U=(1-\pi)U_T d_T$, where $\pi$ is the proportion of incidence that dies or self-cures before treatment. $\pi$ is assumed distributed uniform with bounds 0 and 0.1. Table 6 shows estimates of incidence from four recent prevalence surveys using this method. 
+
+\begin{table} 
+    \begin{tabular}{ c c c c c c }
+    \hline
+         & $U$ & $T$ & Prevalence & Duration & Incidence \\ 
+         &     &     & $(10^{-3})$ & (year)    & $(10^{-3}y^{-1})$ \\
+     \hline
+        Cambodia 2002 & 260 & 42 & 12 (10-15) & 2.9 (1.9-4) & 4 (2.5-5.8) \\ 
+        Cambodia 2011 & 205 & 80 & 8.3 (7.1-9.8) & 1.2 (0.8-1.6) & 6.7 (4.5-9.3) \\ 
+        Myanmar 2009 & 300 & 79 & 6.1 (5-7.5) & 1.8 (1.1-1.6) & 3.3 (2-4.8) \\ 
+        Thailand 2012 & 136 & 60 & 2.5 (1.9-3.5) & 1.1 (0.5-1.6) & 2.3 (1-3.5) \\ 
+    \hline
+    \end{tabular} 
+    \caption{Incidence estimation based on $U/T$ ratio
+} 
+\end{table}
+
+Estimates suffer from considerable uncertainty, mostly because surveys are not powered to estimate the number of prevalent TB cases on treatment with great precision. Further, in most surveys, cases found on treatment during the survey do not have a bacteriological status at onset of treatment documented based on the same criteria as survey cases (particularly when culture is not performed routinely). This method does not provide unbiased estimates of incidence.
+
+The above two methods to derive incidence from prevalence are compared below.
+
+\begin{table} 
+    \begin{tabular}{ c c c c }
+    \hline
+         & Prevalence & Incidence - method 1 & Incidence - method 2 \\ 
+         & $(10^{-3})$  & $(10^{-3} y^{-1})$     & $(10^{-3} y^{-1})$ \\
+    \hline
+        Cambodia 2002 & 12 (10-15) & 4 (2.5-5.8) & 2.2 (1.5 – 2.9) \\ 
+        Cambodia 2011 & 8.3 (7.1-9.8) & 6.7 (4.5-9.3) & 3.8 (2.2 – 5.8) \\ 
+        Myanmar 2009 & 6.1 (5-7.5) & 3.3 (2-4.8) & 3.4 (2 – 5.1) \\ 
+        Thailand 2012 & 2.5 (1.9-3.5) & 2.3 (1-3.5) & 1.1 (0.7 – 1.6) \\ 
+    \hline
+    \end{tabular} 
+    \caption{Estimates of incidence derived from prevalence survey results, based on two estimation methods.} 
+\end{table}
+
+It is not clear which method will perform better as validation would require a measurement of incidence. The second method requires a sufficient number of cases on treatment at the time of the survey (at least 30 cases) to be applied. When the number of cases on treatment is too small, the amount of propagated uncertainty renders estimates of incidence unusable. 
+
+
+
+
