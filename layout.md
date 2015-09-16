@@ -9,4 +9,4 @@ subsection_Disaggregation_of_incidence_subsubsection__.tex
 subsubsection_Disaggregation_by_age_and__.tex
 section_Prevalence__.tex
 section_Mortality__.tex
-section_Burden_of_drug_resistance__.tex
+section_Drug_resistance__.tex
