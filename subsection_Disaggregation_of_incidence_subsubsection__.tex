@@ -8,4 +8,8 @@ Global and WHO regional estimates of sex-disaggregated incidence were also calcu
 TB incidence was disaggregated by HIV and CD4 status using the Spectrum software\cite{Stover2012}. WHO estimates of TB incidence were used as inputs to the Spectrum HIV model. The model was fitted to WHO estimates of TB incidence, and then used to produce estimates of TB incidence among people living with HIV disaggregated by CD4 category. A regression method was used to estimate the relative risk (RR) for TB incidence according to the CD4 categories used by Spectrum for national HIV projections\cite{J2010}. Spectrum data were based on the national projections prepared for the UNAIDS Report on the global AIDS epidemic 2012. The model can also be used to  estimate TB mortality among HIV-positive people, the resource requirements associated with  recently updated guidance on ART and the impact of ART expansion. 
 
 A flexible and relatively simple way of modelling TB incidence (or any time-dependent function) is to represent it as k time-dependent m’th order cubic-spline functions:
+
 $I(x) = \sum_{i=1 .. k} \beta_i B^m i(x)$
+
+where $\beta_i$ is the i'th spline coefficient and $B^m i(x)$ represents the evaluation of the i-th basis function at time (year) $x$. The order of each basis function is m and cubic splines are used, i.e. $m=3$. The equation simply states that any time-dependent function, such as incidence, can be represented as a linear combination of cubic-spline basis functions.
+
