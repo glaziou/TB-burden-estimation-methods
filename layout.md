@@ -10,3 +10,4 @@ subsubsection_Disaggregation_by_age_and__.tex
 section_Prevalence_subsection_Population_based__.tex
 section_Mortality_The_best_sources__.tex
 section_Drug_resistance_Global_and__.tex
+section_Projections_of_TB_incidence__.tex
