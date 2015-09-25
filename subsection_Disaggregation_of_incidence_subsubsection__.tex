@@ -13,3 +13,8 @@ $I(x) = \sum_{i=1 .. k} \beta_i B^m i(x)$
 
 where $\beta_i$ is the i'th spline coefficient and $B^m i(x)$ represents the evaluation of the i-th basis function at time (year) $x$. The order of each basis function is m and cubic splines are used, i.e. $m=3$. The equation simply states that any time-dependent function, such as incidence, can be represented as a linear combination of cubic-spline basis functions.
 
+The values of the cubic-spline coefficientsβwere determined by an optimization routine that minimizes the least squares error between incidence data ($I_{obs}$) and the estimated incidence curve $I(x)$:
+Σx=1990:2012 |I(x) - Iobs(x)|2 + λβTSβ
+
+$\sum x = 1990:2012 | I(x) - I_{obs} (x)|^2 + \lambda \beta^T S \beta$
+
