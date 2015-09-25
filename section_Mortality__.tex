@@ -1,4 +1,50 @@
 \section{Mortality}
 
+The best sources of data about deaths from TB (excluding TB deaths among HIV-positive people) are VR systems in which causes of death are coded according to ICD-10 (although the older ICD-9 and ICD-8 classification are still in use in several countries). Deaths from TB in HIV-positive people are coded under HIV-associated codes. 
 
-  
+Two methods were used to estimate TB mortality among HIV-negative people: 
+\begin{itemize}
+\item direct measurements of mortality from VR systems or mortality surveys;
+\item indirect estimates derived from multiplying estimates of TB incidence by estimates of the CFR. 
+\end{itemize}
+
+Each method is described in more detail below. Details on the method used for each country are available online at www.who.int/tb/publications/global_report/gtbr14_mortality_source.csv.
+
+\subsection{Estimating TB mortality among HIV-negative people from vital registration data and mortality surveys}
+
+Data from VR systems are reported to WHO by Member States and territories every year. In countries with functioning VR systems in which causes of death are coded according to the two latest revisions of the International classification of diseases (underlying cause of death: ICD-10 A15-A19, equivalent to ICD-9: 010-018), VR data are the best source of information about deaths from TB among people not infected with HIV. When people with AIDS die from TB, HIV is registered as the underlying cause of death and TB is recorded as a contributory cause. Since one third of countries with VR systems report to WHO only the underlying causes of death and not contributory causes, VR data usually cannot be used to estimate the number of TB deaths in HIV-positive people. 
+
+TB mortality data obtained from VR systems are essential to understanding trends in TB disease burden where case notifications have incomplete coverage or their coverage is not documented through an inventory study. 
+
+As of July 2014, 130 countries had reported mortality data to WHO (including data from sample VR systems and mortality surveys), among 219 countries and territories from which TB data had been requested at least once since 1990. These 130 countries included 9 of the 22 high TB burden countries (HBCs): Brazil, China, India, the Philippines, the Russian Federation, South Africa, Thailand, Viet Nam and Zimbabwe. However, the VR data on TB deaths from South Africa and Zimbabwe were not used for this report because large numbers of HIV deaths were miscoded as TB deaths. Improved empirical adjustment procedures have recently been published\cite{21479092}, and options for specific post-hoc adjustments for misclassification errors in the measurement of TB mortality will be reviewed extensively by the WHO Global Task Force on TB Impact Measurement in early 2015. 
+
+Among the countries for which VR data could be used (see Figure 2.11 in Chapter 2), there were 2186 country-year data points 1990–2013, after 27 outlier data points from systems with very low coverage (<20\%) or very high proportion of ill-defined causes (>50\%) were excluded for analytical purposes. On average, 17 data points were retained for analysis per country (standard deviation (SD) of 7). 
+
+Reports of TB mortality were adjusted upwards to account for incomplete coverage (estimated deaths with no cause documented) and ill-defined causes of death (ICD-9 code B46, ICD-10 codes R00–R99).\cite{15798840}
+
+It was assumed that the proportion of TB deaths among deaths not recorded by the VR system was the same as the proportion of TB deaths in VR-recorded deaths. For VR-recorded deaths with ill-defined causes, it was assumed that the proportion of deaths attributable to TB was the same as the observed proportion in recorded deaths. 
+
+The adjusted number of TB deaths $d_a$ was obtained from the VR report d as follows:
+
+$d_a = \frac{d}{c(1-g)}$
+
+where $c$ denotes coverage (i.e. the number of deaths with a documented cause divided by the total number of estimated deaths) and $g$ denotes the proportion of ill-defined causes.
+
+The uncertainty related to the adjustment was estimated with standard deviation $SD=d/4 [1/c(1-g) -1]$. The uncertainty calculation does not account for miscoding, such as HIV deaths miscoded as deaths due to TB. 
+
+Missing data between existing adjusted data points were interpolated. Trailing missing values were predicted using exponential smoothing models for time series. A penalized likelihood method based on the in-sample fit was used for country-specific model selection. Leading missing values were similarly predicted backwards to 1990. A total of 865 country-year data points were thus imputed.
+
+Results from mortality surveys were used to estimate TB mortality in India and Viet Nam. 
+
+In 2013, 36\% of global TB mortality (excluding HIV) was directly measured from VR or survey data (or imputed from survey or VR data from previous years). The remaining 64\% was estimated using the indirect methods described in the next section.
+
+
+\subsection{Estimating TB mortality among HIV-negative people from estimates of case-fatality rates and TB incidence
+}
+
+In 94 countries lacking VR data of the necessary coverage and quality, TB mortality was estimated as the product of TB incidence (see section 4) and the CFR after disaggregation by case type as shown in Table A1.1, following a literature review of CFRs by the TB Modelling and Analysis Consortium (TB-MAC):
+
+$M = (I-N)F_u + NF_n$ , where $M$ denotes mortality, $I$ incidence. $F_u$ and $F_n$ denote CFRs untreated and treated, respectively. $N$ denotes the number of notified TB cases. In countries where the number of treated patients that are not notified (under-reporting) is known from an inventory study, $N$ is adjusted upwards to account for under-reporting. 
+
+
+
