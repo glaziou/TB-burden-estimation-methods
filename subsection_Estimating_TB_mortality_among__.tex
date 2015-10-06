@@ -1,0 +1,45 @@
+\subsection{Estimating TB mortality among HIV-negative people from estimates of case-fatality rates and TB incidence
+}
+
+In 94 countries lacking VR data of the necessary coverage and quality, TB mortality was estimated as the product of TB incidence (see section 4) and the CFR after disaggregation by case type as shown in Table A1.1, following a literature review of CFRs by the TB Modelling and Analysis Consortium (TB-MAC):
+
+$M = (I-N)F_u + NF_n$ , where $M$ denotes mortality, $I$ incidence. $F_u$ and $F_n$ denote CFRs untreated and treated, respectively. $N$ denotes the number of notified TB cases. In countries where the number of treated patients that are not notified (under-reporting) is known from an inventory study, $N$ is adjusted upwards to account for under-reporting. 
+
+\begin{table} 
+    \begin{tabular}{ c c c }
+         & CFR & Sources \\ 
+        Not on TB treatment $F_u$ & 0.43 (0.28- 0.53) &  \cite{12742798} \cite{21483732} \\ 
+        On TB treatment $F_n$ & 0.03 (0.00-0.07) &  \cite{21738585} \\ 
+    \end{tabular} 
+\end{table}
+
+This approach tends to overestimate TB mortality in countries with no VR or mortality survey data and the level of under-reporting of treated TB cases is unknown and large relative to the number of reported cases. 
+
+
+\subsection{Estimating TB mortality among HIV-positive people}
+
+No nationally representative measurements of HIV-associated TB mortality were available from VR systems for use in this report. In the absence of direct measurements, TB mortality among HIV-positive people was estimated indirectly according to the following methods (also see section 4.5) implemented in the Spectrum software (available at http://www.futuresinstitute.org/spectrum.aspx).
+
+TB mortality is calculated as the product of HIV-positive TB incidence (see section 4.5) and case fatality ratios:
+
+$M = (I-N)F_u + NF_n$ 									
+
+where $I$ represents incident TB cases among people living with HIV, $N$ represents HIV-positive cases that are notified, $(I-N)$ represents HIV-positive TB cases that are not notified and $M$ represents TB mortality among HIV-positive people. $F_n$ and $F_u$ are the case fatality ratios for notified and non-notified incident cases, respectively. The case fatality ratios were obtained in collaboration with the TB Modeling and Analysis Consortium (TB-MAC), and are shown in Table 2.
+
+\begin{table} 
+    \begin{tabular}{ c c c }
+         & CFR & Sources \\ 
+        Not on ART not on TB treatment & 0.78 (0.65-0.94) &  \cite{12742798} \\ 
+        Not on ART on TB treatment & 0.09 (0.03-0.15) & \cite{21738585} \cite{11216921}\\ 
+        on ART less than 1 year not on TB treatment & 0.62 (0.39-0.86) & Data from review + assumptions \\ 
+        on ART less than 1 year on TB treatment &  0.06 (0.01-0.13) & Data from review + assumptions \\ 
+        Not on ART not on TB treatment & 0.49 (0.31-0.70) & Assumptions \\ 
+        Not on ART on TB treatment & 0.04 (0.00-0.10) & Assumptions \\ 
+    \end{tabular} 
+\end{table}
+
+The disaggregation of incident TB into notified and not notified cases is based on the ratio of the point estimates for incident and notified cases. A single CFR was used for all bootstrapped mortality estimates.
+
+Direct measurements of HIV-associated TB mortality are urgently needed. This is especially the case for countries such as South Africa and Zimbabwe, where national VR systems are already in place. In other countries, more efforts are needed to initiate the implementation of sample VR systems as an interim measure.
+
+Details on TB mortality disaggregation by age and sex are provided in Chapter 2.
