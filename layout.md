@@ -1,5 +1,5 @@
 untitled.tex
-section_Historical_background_The_best__.tex
+section_Historical_background_Historically_a__.tex
 section_Incidence_Incidence_is_defined__.tex
 subsection_Four_main_methods_subsubsection__.tex
 subsubsection_Results_from_national_TB__.tex
