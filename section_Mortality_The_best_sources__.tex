@@ -4,11 +4,11 @@ The best sources of data about deaths from TB (excluding TB deaths among HIV-pos
 
 Two methods were used to estimate TB mortality among HIV-negative people: 
 \begin{itemize}
-\item direct measurements of mortality from VR systems or mortality surveys;
-\item indirect estimates derived from multiplying estimates of TB incidence by estimates of the CFR. 
+\item direct measurements of mortality from VR systems or mortality surveys (129 countries);
+\item indirect estimates derived from multiplying estimates of TB incidence by estimates of the CFR (88 countries). 
 \end{itemize}
 
-Each method is described in more detail below. Details on the method used for each country are available online at \url{http://www.who.int/tb/publications/global_report/gtbr14_mortality_source.csv}.
+Each method is described in more detail below. 
 
 \subsection{Estimating TB mortality among HIV-negative people from vital registration data and mortality surveys}
 
@@ -16,15 +16,15 @@ Data from VR systems are reported to WHO by Member States and territories every 
 
 TB mortality data obtained from VR systems are essential to understanding trends in TB disease burden where case notifications have incomplete coverage or their coverage is not documented through an inventory study. 
 
-As of July 2014, 130 countries had reported mortality data to WHO (including data from sample VR systems and mortality surveys), among 219 countries and territories from which TB data had been requested at least once since 1990. These 130 countries included 9 of the 22 high TB burden countries (HBCs): Brazil, China, India, the Philippines, the Russian Federation, South Africa, Thailand, Viet Nam and Zimbabwe. However, the VR data on TB deaths from South Africa and Zimbabwe were not used for this report because large numbers of HIV deaths were miscoded as TB deaths. Improved empirical adjustment procedures have recently been published\cite{21479092}, and options for specific post-hoc adjustments for misclassification errors in the measurement of TB mortality will be reviewed extensively by the WHO Global Task Force on TB Impact Measurement in early 2015. 
+As of July 2015, 130 countries had reported mortality data to WHO (including data from sample VR systems and mortality surveys), among 219 countries and territories from which TB data had been requested at least once since 1990. These 130 countries included 10 of the 22 high TB burden countries (HBCs): Brazil, China, India, Indonesia, the Philippines, the Russian Federation, South Africa, Thailand, Viet Nam and Zimbabwe. However, the VR data on TB deaths from Zimbabwe were not used for this report because large numbers of HIV deaths were miscoded as TB deaths. Improved empirical adjustment procedures have recently been published\cite{21479092}. Adjusted estimates for South Africa were obtained from the Institute of Health Metrics and Evaluation at \url{http://vizhub.healthdata.org/cod/}. 
 
-Among the countries for which VR data could be used (see Figure 2.11 in Chapter 2), there were 2186 country-year data points 1990–2013, after 27 outlier data points from systems with very low coverage (<20\%) or very high proportion of ill-defined causes (>50\%) were excluded for analytical purposes. On average, 17 data points were retained for analysis per country (standard deviation (SD) of 7). 
+Among the countries for which VR data could be used (see Figure 2.15 in Chapter 2), there were 2361 country-year data points 1990–2014, after 13 outlier data points from systems with very low coverage (<20\%) or very high proportion of ill-defined causes (>50\%) were excluded for analytical purposes. The median number of data points per country was 21 (IRQ 15 - 23). 
 
 Reports of TB mortality were adjusted upwards to account for incomplete coverage (estimated deaths with no cause documented) and ill-defined causes of death (ICD-9 code B46, ICD-10 codes R00–R99).\cite{15798840}
 
 It was assumed that the proportion of TB deaths among deaths not recorded by the VR system was the same as the proportion of TB deaths in VR-recorded deaths. For VR-recorded deaths with ill-defined causes, it was assumed that the proportion of deaths attributable to TB was the same as the observed proportion in recorded deaths. 
 
-The adjusted number of TB deaths $d_a$ was obtained from the VR report d as follows:
+The adjusted number of TB deaths $d_a$ was obtained from the VR report $d$ as follows:
 
 $d_a = \frac{d}{c(1-g)}$
 
@@ -32,11 +32,11 @@ where $c$ denotes coverage (i.e. the number of deaths with a documented cause di
 
 The uncertainty related to the adjustment was estimated with standard deviation $SD=d/4 [1/c(1-g) -1]$. The uncertainty calculation does not account for miscoding, such as HIV deaths miscoded as deaths due to TB. 
 
-Missing data between existing adjusted data points were interpolated. Trailing missing values were predicted using exponential smoothing models for time series. A penalized likelihood method based on the in-sample fit was used for country-specific model selection. Leading missing values were similarly predicted backwards to 1990. A total of 865 country-year data points were thus imputed.
+Missing data between existing adjusted data points were interpolated. Trailing missing values were predicted using exponential smoothing models for time series. A penalized likelihood method based on the in-sample fit was used for country-specific model selection. Leading missing values were similarly predicted backwards to 1990. A total of 1076 country-year data points were thus imputed.
 
 Results from mortality surveys were used to estimate TB mortality in India and Viet Nam. 
 
-In 2013, 36\% of global TB mortality (excluding HIV) was directly measured from VR or survey data (or imputed from survey or VR data from previous years). The remaining 64\% was estimated using the indirect methods described in the next section.
+In 2014, 43\% of global TB mortality (excluding HIV) was directly measured from VR or survey data (or imputed from survey or VR data from previous years). The remaining 57\% was estimated using the indirect methods described in the next section.
 
 
 
