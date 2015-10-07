@@ -1,6 +1,6 @@
 untitled.tex
 section_Short_historical_background_Historically__.tex
-section_Incidence_Incidence_is_defined__.tex
+section_Incidence_TB_incidence_has__.tex
 subsection_Four_main_methods_subsubsection__.tex
 subsubsection_Results_from_national_TB__.tex
 figures/psHIV_ratio/psHIV_ratio.png
