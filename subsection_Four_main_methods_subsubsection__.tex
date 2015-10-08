@@ -3,12 +3,14 @@
 \subsubsection {Case notification data combined with expert opinion about case detection gaps.} Expert opinion, elicited in regional workshops or country missions, is used to estimate levels of under-reporting and under-diagnosis. Trends are estimated using either mortality data, surveys of the annual risk of infection or exponential interpolation using estimates of case detection gaps for three years. In this report, this method is used for 120 countries that accounted for 51\% of the estimated global number of incident cases in 2014. The estimation of case detection gaps is essentially based on an in-depth analysis of surveillance data, experts provide their educated best guess about the range of plausible detection gap $g$:
 
 \begin{align*}
-$I=\frac{f(N)}{1-g}, g\in[0,1[$
+I=\frac{f(N)}{1-g}, g\in[0,1[
 \end{align*}
 
 where $f$ denotes a cubic spline function in countries with large year-to-year fluctuations in $N$, or else, the identity function. The incidence series are completed using assumptions about improvements in CFR over time in countries with evidence of improvements in TB control performance such as an increased detection coverage over time or improved treatment outcomes. Calibration of estimates was done using mortality data where available, ensuring that the following inequality holds: 
 
-$0 < \lvert \frac{dI}{dt} \rvert < \lvert \frac{dM}{dt} \rvert $
+\begin{align*}
+0 < \lvert \frac{dI}{dt} \rvert < \lvert \frac{dM}{dt} \rvert 
+\end{align*}
 
 A full description of the methods used in regional workshops where expert opinion was systematically elicited following an in-depth analysis of surveillance data is publicly available in a report of the workshop held for countries in the African Region (in Harare, Zimbabwe, December 2010\cite{WHO}). In some countries, case reporting coverage changed significantly during the period 1990-2013 as a result of surveillance reforms (e.g. disease surveillance was thoroughly reformed after the SARS epidemic in China, the MoJ sector notified cases in Russia starting in the early 2000s). Trends in incidence were derived from repeat tuberculin survey results in Bhutan, India and Yemen and for 40 countries (including countries in Eastern Europe) from trends in mortality. 
 
