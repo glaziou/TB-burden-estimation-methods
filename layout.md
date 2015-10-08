@@ -1,5 +1,6 @@
 untitled.tex
 figures/epiregions2/epiregions2.png
+The_source_of_population_estimates__.tex
 section_Short_historical_background_Historically__.tex
 section_Incidence_TB_incidence_has__.tex
 figures/fig2_1_map_incmethod_clean/fig2_1_map_incmethod_clean.png
