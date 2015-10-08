@@ -20,3 +20,4 @@ section_Drug_resistance_Global_and__.tex
 section_Projections_of_TB_incidence__.tex
 section_Estimation_of_uncertainty_There__.tex
 section_Appendix_Epidemiological_regions_used__.tex
+figures/epiregions1/epiregions1.png
