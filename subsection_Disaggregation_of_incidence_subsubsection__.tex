@@ -9,14 +9,17 @@ TB incidence was disaggregated by HIV and CD4 status using the Spectrum software
 
 A flexible and relatively simple way of modelling TB incidence (or any time-dependent function) is to represent it as k time-dependent m’th order cubic-spline functions:
 
-$I(x) = \sum_{i=1 .. k} \beta_i B^m i(x)$
-
+\begin{align*}
+I(x) = \sum_{i=1 .. k} \beta_i B^m i(x)
+\end{align*}
 where $\beta_i$ is the i'th spline coefficient and $B^m i(x)$ represents the evaluation of the i-th basis function at time (year) $x$. The order of each basis function is m and cubic splines are used, i.e. $m=3$. The equation simply states that any time-dependent function, such as incidence, can be represented as a linear combination of cubic-spline basis functions.
 
 The values of the cubic-spline coefficientsβwere determined by an optimization routine that minimizes the least squares error between incidence data ($I_{obs}$) and the estimated incidence curve $I(x)$:
 Σx=1990:2012 |I(x) - Iobs(x)|2 + λβTSβ
 
-$\sum_x = 1990:2012 | I(x) - I_{obs} (x)|^2 + \lambda \beta^T S \beta$
+\begin{align*}
+\sum_x = 1990:2012 | I(x) - I_{obs} (x)|^2 + \lambda \beta^T S \beta
+\end{align*}
 
 Here $|I - I_{obs}|^2$  is the sum of squared errors in estimated incidence and $S$ is a difference penalty matrix applied directly to the parameters $\beta$ to control the level of variation between adjacent coefficients of the cubic-spline, and thus control (through a choice of $\lambda$) the smoothness of the time-dependent case incidence curve. Another important purpose of the use of the smoothness penalty matrix $S$ is to regularize (by creating smoothness dependencies between adjacent parameters) the ill-conditioned inverse problem (more unknown parameters than the data can resolve) that would tend to over fit the data when left ill-conditioned.
 
@@ -28,7 +31,9 @@ The Spectrum-TB model’s disaggregation method is based on the Williams et al. 
 
 An assumption is made that the risk of TB infection among people living with HIV with CD4 count > 500 μL is proportional to F (it was assumed that it was higher by a factor of 2.5).\cite{15609223} For each $100\mu l$ CD4 decline in the remaining categories (350-499, 250-349, 200-249, 100-199, 50-99 CD4 cells/μL, and CD4 count less than 50 cells μL), the risk of infection is represented as:
 
+\begin{align*}
 $F(c<500) = F(c>500).p(1).p(2)dc$,
+\end{align*}
 
 where $p(1)$ is a parameter that is used to recognize that people living with HIV who have high CD4 counts could be at higher risk of TB infection relative to those who are HIV-negative, and $p(2)$ controls the exponential increase in RR that occurs with CD4 decline. $dc$ is the  number of $100\mu l$ CD4 decline associated with the midpoint of each CD4 category relative to 500: $dc= (3.0, 4.4, 8.6, 12.9, 19.2, 28.6, 37.3)$ for the six CD4 categories.
 
