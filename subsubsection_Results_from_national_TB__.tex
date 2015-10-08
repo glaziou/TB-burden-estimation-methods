@@ -10,9 +10,10 @@ In practice, the duration of disease cannot be directly measured. For example, m
 
 Literature reviews commissioned by the WHO Global Task Force on TB Impact Measurement have provided estimates of the duration of disease in untreated TB cases from the pre-chemotherapy era (before the 1950s). The best estimate of the mean duration of disease (for smear-positive cases and smear-negative cases combined) in HIV-negative individuals is about three years. However, the proportion of incident cases that remain untreated is unknown. There are few data on the duration of disease in HIV-positive individuals. 
 
-The assumed distributions of disease durations are shown in Table.
+The assumed distributions of disease durations are shown in Table \ref{tab:duration}.
 
 \begin{table} 
+    \label{tab:duration}
     \begin{tabular}{ c c }
         \hline
         Case category & Distribution of disease duration (year) \\ 
@@ -38,9 +39,10 @@ $I = \frac{U}{d_U}$
 
 $\delta U = \frac{T}{d_T}$
 
-And disease duration (untreated) is obtained from $d_U=(1-\pi)U_T d_T$, where $\pi$ is the proportion of incidence that dies or self-cures before treatment. $\pi$ is assumed distributed uniform with bounds 0 and 0.1. Table 6 shows estimates of incidence from four recent prevalence surveys using this method. 
+And disease duration (untreated) is obtained from $d_U=(1-\pi)U_T d_T$, where $\pi$ is the proportion of incidence that dies or self-cures before treatment. $\pi$ is assumed distributed uniform with bounds 0 and 0.1. Table \ref{tab:method2} shows estimates of incidence from four recent prevalence surveys using this method. 
 
 \begin{table} 
+\label{tab:method2}
     \begin{tabular}{ c c c c c c }
     \hline
          & $U$ & $T$ & Prevalence & Duration & Incidence \\ 
@@ -60,9 +62,10 @@ Estimates suffer from considerable uncertainty, mostly because surveys are not p
 
 In countries with high-level HIV epidemics that completed a prevalence survey, the prevalence of HIV among prevalent TB cases was found systematically lower than the prevalence of HIV among newly notified TB cases, with an HIV rate ratio among prevalent TB over notified cases ranging from 0.07 in Rwanda (2012) to 0.5 in Malawi (2013). The HIV rate ratio was predicted from a random-effects model fitting data from 5 countries (Malawi, Rwanda, Tanzania, Uganda, Zambia) using a restricted maximum likelihood estimator and setting HIV among notified cases as an effect modifier (Figure \ref{fig:hivratio}). The model was then used to predict HIV prevalence in prevalent cases from HIV prevalence in notified cases in African countries that were not able to measure the prevalence of HIV among survey cases.
 
-The above two methods to derive incidence from prevalence are compared below.
+The above two methods to derive incidence from prevalence are compared below in Table \ref{tab:2methods}.
 
 \begin{table} 
+\label{tab:2methods}
     \begin{tabular}{ c c c c }
     \hline
          & Prevalence & Incidence - method 1 & Incidence - method 2 \\ 
