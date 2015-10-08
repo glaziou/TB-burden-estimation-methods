@@ -2,7 +2,9 @@
 
 \subsubsection {Case notification data combined with expert opinion about case detection gaps.} Expert opinion, elicited in regional workshops or country missions, is used to estimate levels of under-reporting and under-diagnosis. Trends are estimated using either mortality data, surveys of the annual risk of infection or exponential interpolation using estimates of case detection gaps for three years. In this report, this method is used for 120 countries that accounted for 51\% of the estimated global number of incident cases in 2014. The estimation of case detection gaps is essentially based on an in-depth analysis of surveillance data, experts provide their educated best guess about the range of plausible detection gap $g$:
 
+\begin{align*}
 $I=\frac{f(N)}{1-g}, g\in[0,1[$
+\end{align*}
 
 where $f$ denotes a cubic spline function in countries with large year-to-year fluctuations in $N$, or else, the identity function. The incidence series are completed using assumptions about improvements in CFR over time in countries with evidence of improvements in TB control performance such as an increased detection coverage over time or improved treatment outcomes. Calibration of estimates was done using mortality data where available, ensuring that the following inequality holds: 
 
