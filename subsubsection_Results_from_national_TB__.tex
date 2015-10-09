@@ -1,13 +1,13 @@
-\subsubsection {Results from national TB prevalence surveys.} Incidence is estimated using prevalence survey results combined with either a dynamic model or estimates of the duration of disease. This method is used for 19 countries that accounted for 46\% of the estimated global number of incident cases in 2014.
+\subsubsection {Results from national TB prevalence surveys.} Incidence was estimated using prevalence survey results in 19 countries that accounted for 46\% of the estimated global number of incident cases in 2014. Two approaches were used to derive incidence from prevalence.
 
-Incidence can be estimated using measurements from national surveys of the prevalence of TB disease combined with estimates of the duration of disease. Incidence is estimated as the prevalence of TB divided by the average duration of disease under the assumption that the rate of change of prevalence with respect to time is negligible: let $N$ denote the population size, $C$ prevalent TB cases, $P$ the prevalence rate so that $P = C/N$, $m$ the rate of exit from the pool of prevalent cases through mortality, self-cure or cure with respect to time, and $i$ the attack rate. Under the assumption of equilibrium, and further assuming exponentially distributed durations $d$ such that $d = m^{-1}$,
+In a first approach, incidence is estimated using measurements from national surveys of the prevalence of TB disease combined with estimates of the duration of disease. Incidence is estimated as the prevalence of TB divided by the average duration of disease assuming that the rate of change of prevalence with respect to time is negligible: let $N$ denote the population size including $C$ prevalent TB cases, $P$ the prevalence rate so that $P = C/N$, $m$ the rate of exit from the pool of prevalent cases through mortality, self-cure or cure, and $i$ the attack rate. Under the above stated assumption of equilibrium, and further assuming exponentially distributed durations $d$ such that $d = m^{-1}$,
 
 \begin{align*}
 i(N - C)\Delta t - m C\Delta t = 0
 \end{align*}
 
 \begin{align*}
-i = \frac{C}{d(N - C)} = \frac{P}{d(1 - P)}
+i = \frac{C}{d(N - C)} = \frac{P}{d(1 - P)} \simeq \frac{P}{d}
 \end{align*}
 
 In practice, the duration of disease cannot be directly measured. For example, measurements of the duration of symptoms in prevalent TB cases that are detected during a prevalence survey are systematically biased towards lower values, since active case-finding truncates the natural history of undiagnosed disease. Measurements of the duration of disease in notified cases ignore the duration of disease among non-notified and untreated cases. 
