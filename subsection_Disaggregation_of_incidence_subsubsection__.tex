@@ -1,11 +1,7 @@
 \subsection{Disaggregation of incidence}
 \subsubsection{HIV-positive TB incidence}
 
-In this report, TB incidence is disaggregated by HIV-infection status at country level. The estimation of smear-positive TB incidence was discontinued in 2010, for reasons explained in detail in the global report published in 2010.
-
-Global and WHO regional estimates of sex-disaggregated incidence were also calculated, based on country-level female:male ratios of total new and relapse (all case types) TB case notifications, under the assumption that they are a proxy of female:male ratios of incidence. Model-based estimated WHO regional ratios were applied to global incidence for the final sex disaggregation (Chapter 2).  
-
-TB incidence was disaggregated by HIV and CD4 status using the Spectrum software\cite{Stover2012}. WHO estimates of TB incidence were used as inputs to the Spectrum HIV model. The model was fitted to WHO estimates of TB incidence, and then used to produce estimates of TB incidence among people living with HIV disaggregated by CD4 category. A regression method was used to estimate the relative risk (RR) for TB incidence according to the CD4 categories used by Spectrum for national HIV projections\cite{J2010}. Spectrum data were based on the national projections prepared for the UNAIDS Report on the global AIDS epidemic 2012. The model can also be used to  estimate TB mortality among HIV-positive people, the resource requirements associated with  recently updated guidance on ART and the impact of ART expansion. 
+In this report, TB incidence is disaggregated by HIV-infection status at country level. TB incidence was disaggregated by HIV and CD4 status using the Spectrum software\cite{Stover2012}. WHO estimates of TB incidence were used as inputs to the Spectrum HIV model. The model was fitted to WHO estimates of TB incidence, and then used to produce estimates of TB incidence among people living with HIV disaggregated by CD4 category\cite{Pretorius2014}. A regression method was used to estimate the relative risk (RR) for TB incidence according to the CD4 categories used by Spectrum for national HIV projections\cite{J2010}. Spectrum data were based on the national projections prepared for the UNAIDS Report on the global AIDS epidemic 2012. The model can also be used to  estimate TB mortality among HIV-positive people, the resource requirements associated with  recently updated guidance on ART and the impact of ART expansion. 
 
 A flexible and relatively simple way of modelling TB incidence (or any time-dependent function) is to represent it as k time-dependent m’th order cubic-spline functions:
 
@@ -15,10 +11,9 @@ I(x) = \sum_{i=1 .. k} \beta_i B^m i(x)
 where $\beta_i$ is the i'th spline coefficient and $B^m i(x)$ represents the evaluation of the i-th basis function at time (year) $x$. The order of each basis function is m and cubic splines are used, i.e. $m=3$. The equation simply states that any time-dependent function, such as incidence, can be represented as a linear combination of cubic-spline basis functions.
 
 The values of the cubic-spline coefficientsβwere determined by an optimization routine that minimizes the least squares error between incidence data ($I_{obs}$) and the estimated incidence curve $I(x)$:
-Σx=1990:2012 |I(x) - Iobs(x)|2 + λβTSβ
 
 \begin{align*}
-\sum_x = 1990:2012 \enspace | I(x) - I_{obs} (x)|^2 + \lambda \beta^T S \beta
+I(x) = \sum_{x = 1990:2012} \enspace | I(x) - I_{obs} (x)|^2 + \lambda \beta^T S \beta
 \end{align*}
 
 Here $|I - I_{obs}|^2$  is the sum of squared errors in estimated incidence and $S$ is a difference penalty matrix applied directly to the parameters $\beta$ to control the level of variation between adjacent coefficients of the cubic-spline, and thus control (through a choice of $\lambda$) the smoothness of the time-dependent case incidence curve. Another important purpose of the use of the smoothness penalty matrix $S$ is to regularize (by creating smoothness dependencies between adjacent parameters) the ill-conditioned inverse problem (more unknown parameters than the data can resolve) that would tend to over fit the data when left ill-conditioned.
