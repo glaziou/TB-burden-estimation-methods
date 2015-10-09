@@ -13,7 +13,7 @@ where $\beta_i$ is the i'th spline coefficient and $B^m i(x)$ represents the eva
 The values of the cubic-spline coefficientsβwere determined by an optimization routine that minimizes the least squares error between incidence data ($I_{obs}$) and the estimated incidence curve $I(x)$:
 
 \begin{align*}
-I(x) = \sum_{x = 1990 .. 2012} \enspace | I(x) - I_{obs} (x)|^2 + \lambda \beta^T S \beta
+I(x) = \sum_{x = 1990 .. 2012} | I(x) - I_{obs} (x)|^2 + \lambda \beta^T S \beta
 \end{align*}
 
 Here $|I - I_{obs}|^2$  is the sum of squared errors in estimated incidence and $S$ is a difference penalty matrix applied directly to the parameters $\beta$ to control the level of variation between adjacent coefficients of the cubic-spline, and thus control (through a choice of $\lambda$) the smoothness of the time-dependent case incidence curve. Another important purpose of the use of the smoothness penalty matrix $S$ is to regularize (by creating smoothness dependencies between adjacent parameters) the ill-conditioned inverse problem (more unknown parameters than the data can resolve) that would tend to over fit the data when left ill-conditioned.
