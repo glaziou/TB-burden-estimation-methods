@@ -5,10 +5,10 @@ No nationally representative measurements of HIV-associated TB mortality were av
 TB mortality is calculated as the product of HIV-positive TB incidence (see section 4.5) and case fatality ratios:
 
 \begin{align*}
-M = (I-N)F_u + NF_n
+M = (I-N)F_u + NF_t
 \end{align*}
 
-where $I$ represents incident TB cases among people living with HIV, $N$ represents HIV-positive cases that are notified, $(I-N)$ represents HIV-positive TB cases that are not notified and $M$ represents TB mortality among HIV-positive people. $F_n$ and $F_u$ are the case fatality ratios for notified and non-notified incident cases, respectively. The case fatality ratios were obtained in collaboration with the TB Modeling and Analysis Consortium (TB-MAC), and are shown in Table \ref{tab:hivcfr}.
+where $I$ represents incident TB cases among people living with HIV, $N$ represents HIV-positive cases that are notified, $(I-N)$ represents HIV-positive TB cases that are not notified and $M$ represents TB mortality among HIV-positive people. $F_t$ and $F_u$ are the case fatality ratios for treated and non-treated incident cases, respectively. The case fatality ratios were obtained in collaboration with the TB Modeling and Analysis Consortium (TB-MAC), and are shown in Table \ref{tab:hivcfr}.
 
 \begin{table}
 \label{tab:hivcfr}
@@ -27,8 +27,7 @@ where $I$ represents incident TB cases among people living with HIV, $N$ represe
     \caption{Distribution of CFR in HIV-positive individuals}
 \end{table}
 
-The disaggregation of incident TB into notified and not notified cases is based on the ratio of the point estimates for incident and notified cases. A single CFR was used for all bootstrapped mortality estimates.
+The disaggregation of incident TB into treated and not treated cases is based on the ratio of the point estimates for incident and notified cases, adjusted for under-reporting. A single CFR was used for all bootstrapped mortality estimates.
 
 Direct measurements of HIV-associated TB mortality are urgently needed. This is especially the case for countries such as South Africa and Zimbabwe, where national VR systems are already in place. In other countries, more efforts are needed to initiate the implementation of sample VR systems as an interim measure.
 
-Details on TB mortality disaggregation by age and sex are provided in Chapter 2.
