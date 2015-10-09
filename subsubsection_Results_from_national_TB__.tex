@@ -49,7 +49,7 @@ I = &\frac{U}{d_U} \\
 
 Disease duration (untreated) is obtained from $d_U=(1-\pi)U_T d_T$, where $\pi$ is the proportion of incidence that dies or self-cures before treatment. $\pi$ is assumed distributed uniform with bounds 0 and 0.1. Table \ref{tab:method2} shows estimates of incidence from four recent prevalence surveys using this method. 
 
-\begin{table}[h] 
+\begin{table}
 \label{tab:method2}
     \begin{tabular}{ c c c c c c }
     \hline
@@ -92,7 +92,7 @@ It is not clear which method will perform better as validation would require a m
 
 If both methods can be applied, results from two methods may be combined in a statistical ensemble approach as follows:
 
-The incidence rate obtained using method $i$ is assumed distributed Beta with shape and scale parameters $a_i + 1$ and $b_i + 1$, respectively, and determined using the method of moments based on equation \ref{eq:betamoments}: $I_i \sim B(a_i + 1. b_i + 1)$ so that 
+The incidence rate obtained using method $i$ is assumed distributed Beta with shape and scale parameters $a_i + 1$ and $b_i + 1$, respectively, and determined using the method of moments based on equation \ref{eqn:betamoments}: $I_i \sim B(a_i + 1. b_i + 1)$ so that 
 
 \begin{align*}
 Prob(x = \textrm{TB})= \int_{0}^{1} x B(a_i,b_i) dx = \frac{a_i+1}{a_i+b_i+2}
