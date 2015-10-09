@@ -51,7 +51,20 @@ Model testing showed that using two replicates of the HIV survey data (i.e. dupl
 A prototype Bayesian importance sampling (IMIS) algorithm was developed to handle complex data weighing possibilities, but it was based on subjective priors and likelihood functions and is more time-consuming to run than simple least squares. For the purposes of producing estimates for all countries automatically, the least squares method was used. In future, least squares and IMIS fitting could be made available to the end user.
 
 
-For countries with no data, a range for p(2) was estimated from countries with survey or testing data, which suggest that $p(2) = 1.96 [1.8-2.1]$. The RR-model was then fitted to total TB incidence only. There is no satisfactory way to verify results for TB incidence among people living with HIV when no HIV-testing data are available. However, comparison of the global estimate for TB incidence among people living with HIV produced by Spectrum and estimates previously published by WHO (based on a different method using HIV prevalence instead of CD4 distributions and using  HIV-test data in a different way) suggests that the RR-model works reasonably well.
+For countries with no data, a range for p(2) was estimated from countries with survey or testing data, which suggest that $p(2) = 1.96 [1.8-2.1]$. The RR-model was then fitted to total TB incidence only. There is no satisfactory way to verify results for TB incidence among people living with HIV when no HIV-testing data are available. However, comparison of the global estimate for TB incidence among people living with HIV produced by Spectrum and estimates based on a different method using HIV prevalence instead of CD4 distributions and using  HIV-test data in a different way) suggests that the RR-model works reasonably well. The alternative method to disaggregate TB incidence by HIV is derived as follows:
+
+\begin{align*}
+\rho &= \frac{I^+/N^+}{I^-/N^-} > 1     \\
+\rho \frac{I^-}{I^+} &= \frac{N^-}{N^+}  \\
+\frac{I^+}{I^-} &= \frac{\rho \frac{N^+}{N^-}}{1 + (\rho - 1)\frac{N^+}{N^-} = t \\
+t &= \frac{h \rho}{1 + h(\rho - 1)}
+\end{align*}
+
 Provider-initiated testing and counselling with at least 50\% HIV testing coverage is the most widely available source of information on the prevalence of HIV in TB patients (Table 8). However, this source of data is affected by biases, particularly when coverage is closer to 50\% than to 100\%. In all countries with repeat data from testing, the relationship between the prevalence of HIV in TB patients and the coverage of HIV testing was examined graphically. In some countries, the prevalence of HIV in TB patients was found to decrease with increasing HIV testing coverage while in others it increased with increasing HIV testing coverage; in most countries, the prevalence of HIV followed highly inconsistent patterns (with repeat changes in direction) as HIV testing coverage increased. Therefore, it was not possible to adjust for the effect of incomplete coverage of HIV testing on estimates of the prevalence of HIV among TB patients. The assumption was thus made that TB patients with an HIV test result were statistically representative of all TB cases. As coverage of HIV testing continues to increase globally, biases will decrease. 
 
+The TB incidence rate ratio (HIV-positive over HIV-negative) was estimated by fitting the following linear model:
+
+\begin{align*}
+log(\rho) = log \left(\frac{t}{1-t}\right) - log \left(\frac{h}{1-h}\right), (t, h) \in ]0,1[
+\end{align*}
 
