@@ -10,9 +10,9 @@ i(N - C)\Delta t - m C\Delta t = 0
 i = \frac{C}{d(N - C)} = \frac{P}{d(1 - P)} \simeq \frac{P}{d}
 \end{align*}
 
-In practice, the duration of disease cannot be directly measured. For example, measurements of the duration of symptoms in prevalent TB cases that are detected during a prevalence survey are systematically biased towards lower values, since active case-finding truncates the natural history of undiagnosed disease. Measurements of the duration of disease in notified cases ignore the duration of disease among non-notified and untreated cases. 
+In practice, the duration of disease cannot be directly measured. For example, measurements of the duration of symptoms in prevalent TB cases that are detected during a prevalence survey are systematically biased towards lower values, since survey investigations truncate the natural history of undiagnosed disease. Measurements of the duration of disease in notified cases ignore the duration of disease among non-notified cases and are affected by recall biases. 
 
-Literature reviews commissioned by the WHO Global Task Force on TB Impact Measurement have provided estimates of the duration of disease in untreated TB cases from the pre-chemotherapy era (before the 1950s). The best estimate of the mean duration of disease (for smear-positive cases and smear-negative cases combined) in HIV-negative individuals is about three years. However, the proportion of incident cases that remain untreated is unknown. There are few data on the duration of disease in HIV-positive individuals. 
+Literature reviews commissioned by the WHO Global Task Force on TB Impact Measurement have provided estimates of the duration of disease in untreated TB cases from the pre-chemotherapy era (before the 1950s). The best estimate of the mean duration of untreated disease (for smear-positive cases and smear-negative cases combined) in HIV-negative individuals is about three years. There are few data on the duration of disease in HIV-positive individuals. 
 
 The assumed distributions of disease durations are shown in Table \ref{tab:duration}.
 
@@ -36,19 +36,20 @@ The assumed distributions of disease durations are shown in Table \ref{tab:durat
 A second approach consists in estimating disease duration through a simple dynamical model with three compartments: susceptibles ($S$), untreated TB ($U$) and treated TB ($T$). The size of $U$ and $T$ is estimated from the prevalence survey findings. Transitions from $U$ to $T$ are determined as follows:
 
 \begin{align*}
-\frac{dU}{dt} = I - (\mu_u + \theta_u + \delta)U
+\frac{dU}{dt} &= I S - (\mu_u + \theta_u + \delta)U \\
+\frac{dT}{dt} &= \delta U - (\mu_t + \theta_t) T
 \end{align*}
 
-Where $I$ denotes Incidence, μu+θu denote mortality (untreated) and self-cure (untreated), respectively, $\delta$ denotes the rate of removal from U through detection and treatment, $\mu_T + \theta_T$ denote mortality (treated) and cure, respectively. At equilibrium, the above two equations simplify to: 
+Where $I$ denotes Incidence, $\mu$ and $\theta$ denote mortality and self-cure or cure (with subscripts $u$ and $t$ indicating untreated and treated cases), respectively, $\delta$ denotes the rate of removal from $U$ through detection and treatment. At equilibrium, the above two equations simplify to: 
 
 \begin{align*}
 I = &\frac{U}{d_U} \\
 \delta U = &\frac{T}{d_T}
 \end{align*}
 
-And disease duration (untreated) is obtained from $d_U=(1-\pi)U_T d_T$, where $\pi$ is the proportion of incidence that dies or self-cures before treatment. $\pi$ is assumed distributed uniform with bounds 0 and 0.1. Table \ref{tab:method2} shows estimates of incidence from four recent prevalence surveys using this method. 
+Disease duration (untreated) is obtained from $d_U=(1-\pi)U_T d_T$, where $\pi$ is the proportion of incidence that dies or self-cures before treatment. $\pi$ is assumed distributed uniform with bounds 0 and 0.1. Table \ref{tab:method2} shows estimates of incidence from four recent prevalence surveys using this method. 
 
-\begin{table} 
+\begin{table}[h] 
 \label{tab:method2}
     \begin{tabular}{ c c c c c c }
     \hline
@@ -87,11 +88,11 @@ The above two methods to derive incidence from prevalence are compared below in 
     \caption{Estimates of incidence derived from prevalence survey results, based on two estimation methods.} 
 \end{table}
 
-It is not clear which method will perform better as validation would require a measurement of incidence. The second method requires a sufficient number of cases on treatment at the time of the survey (as a rule of thumb, at least 30 cases) to be generate stable estimates. When the number of cases on treatment is too small, the amount of propagated uncertainty renders estimates of incidence unusable. 
+It is not clear which method will perform better as validation would require a measurement of incidence. The second method requires a sufficient number of cases on treatment at the time of the survey (as a rule of thumb, at least 30 cases) to be generate stable estimates. When the number of cases on treatment is too small, the amount of propagated uncertainty renders estimates of incidence unusable and only the first approach is used. 
 
 If both methods can be applied, results from two methods may be combined in a statistical ensemble approach as follows:
 
-The incidence rate obtained using method i is assumed distributed Beta with shape and scale parameters $a_i + 1$ and $b_i + 1$, respectively, and determined using the method of moments: $I_i \sim B(a_i + 1. b_i + 1)$ so that 
+The incidence rate obtained using method $i$ is assumed distributed Beta with shape and scale parameters $a_i + 1$ and $b_i + 1$, respectively, and determined using the method of moments: $I_i \sim B(a_i + 1. b_i + 1)$ so that 
 
 \begin{align*}
 Prob(x = \textrm{TB})= \int_{0}^{1} x B(a_i,b_i) dx = \frac{a_i+1}{a_i+b_i+2}
