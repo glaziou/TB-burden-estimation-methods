@@ -18,3 +18,22 @@ A full description of the methods used in regional workshops where expert opinio
 
 The proportion of cases that were not reported in the three reference years were assumed to follow a Beta distribution, with parameters $\alpha$ and $\beta$ obtained from the expected value $E$ and variance $V$ using the method of moments\cite{Renyi2007}, as follows: 
 
+\begin{equation}
+\begin{align}
+\alpha &= E \left(\frac{E(1-E)}{V} - 1 \right) \\
+\beta  &= (1-E)\left(\frac{E(1-E)}{V} - 1 \right)
+\label{eqn:betamoments}
+\end{align}
+\end{equation}
+
+Time series for the period 1990–2014 were built according to the characteristics of the levels of under-reporting and under-diagnosis that were estimated for the three reference years. A cubic spline extrapolation of $V$ and $E$, with knots set at the reference years, was used for countries with low-level or concentrated HIV epidemics. In countries with a generalized HIV epidemic, the trajectory of incidence from 1990 to the first reference year (usually 1997) was based on the annual rate of change in HIV prevalence and time changes in the fraction $F$ of incidence attributed to HIV, determined as follows:
+
+\begin{equation}
+\begin{align}
+F &= \frac{h(\rho - 1)}{h(\rho - 1) + 1} \\
+  &= \frac{t - h}{1 - h}
+\end{align}
+\end(equation}
+
+where $h$ is the prevalence of HIV in the general population, $\rho$ is the TB incidence rate ratio among HIV-positive individuals over HIV-negative individuals and $t$ is the prevalence of HIV among new TB cases.
+
