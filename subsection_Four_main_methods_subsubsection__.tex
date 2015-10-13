@@ -16,7 +16,7 @@ where $I$ denotes incidence and $M$ denotes mortality.
 
 A full description of the methods used in regional workshops where expert opinion was systematically elicited following an in-depth analysis of surveillance data is publicly available in a report of the workshop held for countries in the African Region (in Harare, Zimbabwe, December 2010\cite{WHO}). In some countries, case reporting coverage changed significantly during the period 1990-2013 as a result of disease surveillance reforms (e.g. disease surveillance was thoroughly reformed after the SARS epidemic in China, the Ministry of Justice sector notified cases among prisoners in Russia starting in the early 2000s). Trends in incidence were derived from repeat tuberculin survey results in Bhutan, India and Yemen and from trends in mortality in 40 countries (including most countries in Eastern Europe). 
 
-The proportion of cases that were not reported in the three reference years were assumed to follow a Beta distribution, with parameters $\alpha$ and $\beta$ obtained from the expected value $E$ and variance $V$ using the method of moments\cite{Renyi2007}, as follows, using equation (\ref{eqn:rho}) in section 4.2.1: 
+The proportion of cases that were not reported in the three reference years were assumed to follow a Beta distribution, with parameters $\alpha$ and $\beta$ obtained from the expected value $E$ and variance $V$ using the method of moments\cite{Renyi2007}, as follows: 
 
 \begin{equation}
 \begin{align}
@@ -26,7 +26,7 @@ The proportion of cases that were not reported in the three reference years were
 \end{align}
 \end{equation}
 
-Time series for the period 1990–2014 were built according to the characteristics of the levels of under-reporting and under-diagnosis that were estimated for the three reference years. A cubic spline extrapolation of $V$ and $E$, with knots set at the reference years, was used for countries with low-level or concentrated HIV epidemics. In countries with a generalized HIV epidemic, the trajectory of incidence from 1990 to the first reference year (usually 1997) was based on the annual rate of change in HIV prevalence and time changes in the fraction $F$ of incidence attributed to HIV, determined as follows:
+Time series for the period 1990–2014 were built according to the characteristics of the levels of under-reporting and under-diagnosis that were estimated for the three reference years. A cubic spline extrapolation of $V$ and $E$, with knots set at the reference years, was used for countries with low-level or concentrated HIV epidemics. In countries with a generalized HIV epidemic, the trajectory of incidence from 1990 to the first reference year (usually 1997) was based on the annual rate of change in HIV prevalence and time changes in the fraction $F$ of incidence attributed to HIV, determined as follows, using equation (\ref{eqn:rho}) in section 4.2.1:
 
 \begin{align*}
 F &= \frac{h(\rho - 1)}{h(\rho - 1) + 1} \\
