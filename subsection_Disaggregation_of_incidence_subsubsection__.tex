@@ -52,15 +52,15 @@ As with the main indicators, confidence intervals are based on a bootstrap metho
 
 For countries with no data, a range for p(2) was estimated from countries with survey or testing data, which suggest that $p(2) = 1.96 [1.8-2.1]$. The RR-model was then fitted to total TB incidence only. There is no satisfactory way to verify results for TB incidence among people living with HIV when no HIV-testing data are available. However, comparison of the global estimate for TB incidence among people living with HIV produced by Spectrum and estimates based on a different method using HIV prevalence instead of CD4 distributions and using  HIV-test data in a different way) suggests that the RR-model works reasonably well. The comparative method to disaggregate TB incidence by HIV is derived as follows, where the $I$ and $N$ denote incident cases and the total population, respectively, superscripts + and - denote HIV status, $t$ is the prevalence of HIV among new TB cases, $h$ is the prevalence of HIV in the general population and $\rho$ is the incidence rate ratio (HIV-positive over HIV-negative).
 
-\begin{equation*}
-\begin{align*}
+\begin{equation}
+\begin{align}
 \rho &= \frac{I^+/N^+}{I^-/N^-} > 1    \\
 \rho \frac{I^-}{I^+} &= \frac{N^-}{N^+}  \\
 \frac{I^+}{I} &= \frac{\rho \frac{N^+}{N}}{1 + (\rho - 1)\frac{N^+}{N}} = t \\
 t &= \frac{h \rho}{1 + h(\rho - 1)}
 \label{eqn:rho}
-\end{align*}
-\end{equation*}
+\end{align}
+\end{equation}
 
 The TB incidence rate ratio $\rho$ is estimated by fitting the following linear model with a slope constrained to 1:
 
