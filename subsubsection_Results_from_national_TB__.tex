@@ -18,7 +18,6 @@ Literature reviews commissioned by the WHO Global Task Force on TB Impact Measur
 The assumed distributions of disease durations are shown in Table \ref{tab:duration}.
 
 \begin{table} 
-    \label{tab:duration}
     \begin{tabular}{ c c }
         \hline
         Case category & Distribution of disease duration (year) \\ 
@@ -30,6 +29,7 @@ The assumed distributions of disease durations are shown in Table \ref{tab:durat
         \hline
     \end{tabular} 
     \caption{Distribution of disease duration by case category} 
+    \label{tab:duration}
 \end{table}
 
 
@@ -51,7 +51,6 @@ I = &\frac{U}{d_U} \\
 Disease duration (untreated) is obtained from $d_U=(1-\pi)U_T d_T$, where $\pi$ is the proportion of incidence that dies or self-cures before treatment. $\pi$ is assumed distributed uniform with bounds 0 and 0.1. Table \ref{tab:method2} shows estimates of incidence from four recent prevalence surveys using this method. 
 
 \begin{table}
-\label{tab:method2}
     \begin{tabular}{ c c c c c c }
     \hline
          & $U$ & $T$ & Prevalence & Duration & Incidence \\ 
@@ -64,7 +63,7 @@ Disease duration (untreated) is obtained from $d_U=(1-\pi)U_T d_T$, where $\pi$ 
     \hline
     \end{tabular} 
     \caption{Incidence estimation based on $U/T$ ratio
-} 
+    \label{tab:method2}} 
 \end{table}
 
 Estimates suffer from considerable uncertainty, mostly because surveys are not powered to estimate the number of prevalent TB cases on treatment with great precision. Further, in most surveys, cases found on treatment during the survey do not have a bacteriological status at onset of treatment documented based on the same criteria as survey cases (particularly when culture is not performed routinely). This method provides biased estimates of incidence. 
@@ -74,7 +73,6 @@ In countries with high-level HIV epidemics that completed a prevalence survey, t
 The above two methods to derive incidence from prevalence are compared below in Table \ref{tab:2methods}.
 
 \begin{table} 
-\label{tab:2methods}
     \begin{tabular}{ c c c c }
     \hline
          & Prevalence & Incidence - method 1 & Incidence - method 2 \\ 
@@ -87,6 +85,7 @@ The above two methods to derive incidence from prevalence are compared below in 
     \hline
     \end{tabular} 
     \caption{Estimates of incidence derived from prevalence survey results, based on two estimation methods.} 
+    \label{tab:2methods}
 \end{table}
 
 It is not clear which method will perform better, validation would require a measurement of incidence. The second method requires a sufficient number of cases on treatment at the time of the survey (as a rule of thumb, at least 30 cases) to generate stable estimates. When the number of cases on treatment is too small, the amount of propagated uncertainty renders estimates of incidence unusable and only the first approach is used. 
