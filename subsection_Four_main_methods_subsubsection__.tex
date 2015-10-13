@@ -6,7 +6,7 @@
 I=\frac{f(N)}{1-g}, g\in[0,1[
 \end{align*}
 
-where $f$ denotes a cubic spline function in countries with large year-to-year fluctuations in $N$, or else, the identity function. The incidence series are completed using assumptions about improvements in CFR over time in countries with evidence of improvements in TB control performance such as an increased detection coverage over time or improved treatment outcomes, ensuring that the following inequality holds: 
+where $I$ denotes incidence, $N$ denotes case notifications, $f$ denotes a cubic spline function in countries with large year-to-year fluctuations in $N$, or else, the identity function. The incidence series are completed using assumptions about improvements in CFR over time in countries with evidence of improvements in TB control performance such as an increased detection coverage over time or improved treatment outcomes, ensuring that the following inequality holds: 
 
 \begin{align*}
 0 \leq \left| \frac{dI}{dt} \right| \leq \left| \frac{dM}{dt} \right|
@@ -14,9 +14,9 @@ where $f$ denotes a cubic spline function in countries with large year-to-year f
 
 where $I$ denotes incidence and $M$ denotes mortality.
 
-A full description of the methods used in regional workshops where expert opinion was systematically elicited following an in-depth analysis of surveillance data is publicly available in a report of the workshop held for countries in the African Region (in Harare, Zimbabwe, December 2010\cite{WHO}). In some countries, case reporting coverage changed significantly during the period 1990-2013 as a result of disease surveillance reforms (e.g. disease surveillance was thoroughly reformed after the SARS epidemic in China, the Ministry of Justice sector notified cases among prisoners in Russia starting in the early 2000s). Trends in incidence were derived from repeat tuberculin survey results in Bhutan, India and Yemen and for 40 countries (including most countries in Eastern Europe) from trends in mortality. 
+A full description of the methods used in regional workshops where expert opinion was systematically elicited following an in-depth analysis of surveillance data is publicly available in a report of the workshop held for countries in the African Region (in Harare, Zimbabwe, December 2010\cite{WHO}). In some countries, case reporting coverage changed significantly during the period 1990-2013 as a result of disease surveillance reforms (e.g. disease surveillance was thoroughly reformed after the SARS epidemic in China, the Ministry of Justice sector notified cases among prisoners in Russia starting in the early 2000s). Trends in incidence were derived from repeat tuberculin survey results in Bhutan, India and Yemen and from trends in mortality in 40 countries (including most countries in Eastern Europe). 
 
-Distributions of the proportion of cases that were not reported in the three reference years were assumed to follow a Beta distribution, with parameters $\alpha$ and $\beta$ obtained from the expected value $E$ and variance $V$ using the method of moments\cite{Renyi2007}, as follows: 
+The proportion of cases that were not reported in the three reference years were assumed to follow a Beta distribution, with parameters $\alpha$ and $\beta$ obtained from the expected value $E$ and variance $V$ using the method of moments\cite{Renyi2007}, as follows: 
 
 \begin{equation}
 \begin{align}
