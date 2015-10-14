@@ -12,15 +12,15 @@ Reports of TB mortality were adjusted upwards to account for incomplete coverage
 
 It was assumed that the proportion of TB deaths among deaths not recorded by the VR system was the same as the proportion of TB deaths in VR-recorded deaths. For VR-recorded deaths with ill-defined causes, it was assumed that the proportion of deaths attributable to TB was the same as the observed proportion in recorded deaths. 
 
-The adjusted number of TB deaths $d_a$ was obtained from the VR report $d$ as follows:
+The adjusted number of TB deaths $\kappa_a$ was obtained from the VR report $\kappa$ as follows:
 
 \begin{align*}
-d_a = \frac{d}{c(1-g)}
+\kappa_a = \frac{\kappa}{v(1-g)}
 \end{align*}
 
-where $c$ denotes coverage (i.e. the number of deaths with a documented cause divided by the total number of estimated deaths) and $g$ denotes the proportion of ill-defined causes.
+where $v$ denotes coverage (i.e. the number of deaths with a documented cause divided by the total number of estimated deaths) and $g$ denotes the proportion of ill-defined causes.
 
-The uncertainty related to the adjustment was estimated with standard deviation $\hat{\sigma} = d/4 [1/c(1-g) -1]$. The uncertainty calculation does not account for miscoding, such as HIV deaths miscoded as deaths due to TB, except in South Africa. 
+The uncertainty related to the adjustment was estimated with standard deviation $\hat{\sigma} = \kappa /4 [1/v(1-g) -1]$. The uncertainty calculation does not account for miscoding, such as HIV deaths miscoded as deaths due to TB, except in South Africa. 
 
 Missing data between existing adjusted data points were interpolated. Trailing missing values were predicted using exponential smoothing models for time series\cite{Hyndman2008-ax}. A penalized likelihood method based on the in-sample fit was used for country-specific model selection. Leading missing values were similarly predicted backwards to 1990. A total of 1076 country-year data points were thus imputed.
 
