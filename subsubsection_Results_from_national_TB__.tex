@@ -37,8 +37,8 @@ The assumed distributions of disease durations are shown in Table \ref{tab:durat
 A second approach consists of estimating disease duration through a simple dynamical model with three compartments: susceptibles ($S$), untreated TB ($U$) and treated TB ($T$). The size of $U$ and $T$ is estimated from the prevalence survey findings. Transitions from $U$ to $T$ are determined as follows:
 
 \begin{align*}
-\frac{dU}{dt} &= I S - (\mu_u + \theta_u + \delta)U \\
-\frac{dT}{dt} &= \delta U - (\mu_t + \theta_t) T
+\frac{\mathrm{d}U}{\mathrm{d}t} &= I S - (\mu_u + \theta_u + \delta)U \\
+\frac{\mathrm{d}T}{\mathrm{d}t} &= \delta U - (\mu_t + \theta_t) T
 \end{align*}
 
 Where $I$ denotes Incidence, $\mu$ and $\theta$ denote mortality and self-cure or cure (with subscripts $u$ and $t$ indicating untreated and treated cases), respectively, $\delta$ denotes the rate of removal from $U$ through detection and treatment. At equilibrium, the above two equations simplify to: 
