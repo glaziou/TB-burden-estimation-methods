@@ -20,15 +20,15 @@ It is not clear which method will perform better, validation would require a mea
 
 If both methods can be applied, results from two methods may be combined in a statistical ensemble approach as follows:
 
-The incidence rate obtained using method $i$ is assumed distributed Beta with shape and scale parameters $a_i + 1$ and $b_i + 1$, respectively, and determined using the method of moments based on equation \ref{eqn:betamoments}: $I_i \sim B(a_i + 1. b_i + 1)$ so that 
+The incidence rate obtained using method $i$ is assumed distributed Beta with shape and scale parameters $\alpha_i + 1$ and $\beta_i + 1$, respectively, and determined using the method of moments based on equation \ref{eqn:betamoments}: $I_i \sim B(\alpha_i + 1. \beta_i + 1)$ so that 
 
 \begin{align*}
-Prob(x = \textrm{TB})= \int_{0}^{1} x B(a_i,b_i) dx = \frac{a_i+1}{a_i+b_i+2}
+Prob(x = \textrm{TB})= \int_{0}^{1} x B(\alpha_i, \beta_i) dx = \frac{\alpha_i+1}{a_i+\beta_i+2}
 \end{align*}
 
 The combined probability is then expressed as 
 
 \begin{align*}
-Prob(x = \textrm{TB}) = \frac{\sum{a_i}+1}{\sum{a_i}+\sum{b_i}+2} 
+Prob(x = \textrm{TB}) = \frac{\sum{\alpha_i}+1}{\sum{\alpha_i}+\sum{\beta_i}+2} 
 \end{align*}
 
