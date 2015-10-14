@@ -20,7 +20,13 @@ The adjusted number of TB deaths $\kappa_a$ was obtained from the VR report $\ka
 
 where $v$ denotes coverage (i.e. the number of deaths with a documented cause divided by the total number of estimated deaths) and $g$ denotes the proportion of ill-defined causes.
 
-The uncertainty related to the adjustment was estimated with standard deviation $\hat{\sigma} = \kappa /4 [1/v(1-g) -1]$. The uncertainty calculation does not account for miscoding, such as HIV deaths miscoded as deaths due to TB, except in South Africa. 
+The uncertainty related to the adjustment was estimated with standard deviation 
+
+\begin{align*}
+\hat{\sigma} = \frac{\kappa}{4} \left[\frac{1}{v(1-g) -1}\right]
+\end{align*}
+
+The uncertainty calculation does not account for miscoding, such as HIV deaths miscoded as deaths due to TB, except in South Africa. 
 
 Missing data between existing adjusted data points were interpolated. Trailing missing values were predicted using exponential smoothing models for time series\cite{Hyndman2008-ax}. A penalized likelihood method based on the in-sample fit was used for country-specific model selection. Leading missing values were similarly predicted backwards to 1990. A total of 1076 country-year data points were thus imputed.
 
