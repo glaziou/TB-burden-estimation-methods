@@ -4,18 +4,18 @@
 In 88 countries lacking VR data of the necessary coverage and quality, TB mortality was estimated as the product of TB incidence and the case fatality rate (CFR) after disaggregation by case type as shown in Table \ref{tab:cfr}, following a literature review of CFRs by the TB Modelling and Analysis Consortium (TB-MAC):
 
 \begin{align*}
-M = (I^{-} -T^{-})f^{-}_u + T^{-}f^{-}_t 
+M = (I -T)f_u + Tf_t 
 \end{align*}
 
-where $M$ denotes mortality, $I$ incidence. $f_u$ and $f_t$ denote CFRs untreated and treated, respectively, and the - superscript denotes HIV status. $T$ denotes the number of treated TB cases. In countries where the number of treated patients that are not notified (under-reporting) is known from an inventory study, the number of notified cases is adjusted upwards to estimate $T^{-}$ accounting for under-reporting. 
+where $M$ denotes mortality, $I$ incidence. $f_u$ and $f_t$ denote CFRs untreated and treated, respectively. $T$ denotes the number of treated TB cases. In countries where the number of treated patients that are not notified (under-reporting) is known from an inventory study, the number of notified cases is adjusted upwards to estimate $T^{-}$ accounting for under-reporting. 
 
 \begin{table} 
     \begin{tabular}{ c c c }
     \hline
          & CFR & Sources \\ 
          \hline
-        Not on TB treatment $f^-_u$ & 0.43 (0.28- 0.53) &  \cite{12742798} \cite{21483732} \\ 
-        On TB treatment $f^-_t$ & 0.03 (0.00-0.07) &  \cite{21738585} \\ 
+        Not on TB treatment $f_u$ & 0.43 (0.28- 0.53) &  \cite{12742798} \cite{21483732} \\ 
+        On TB treatment $f_t$ & 0.03 (0.00-0.07) &  \cite{21738585} \\ 
         \hline
     \end{tabular} 
     \caption{Distribution of CFRs by case category} 
