@@ -50,15 +50,15 @@ Model testing showed that using two replicates of the HIV survey data (i.e. dupl
 
 As with the main indicators, confidence intervals are based on a bootstrap method. For this method all data sources are sampled from assumed underlying distributions: total incidence data is sampled from normally bootstrap result set for total incidence, survey and sentinel HIV data are sampled from beta distributions and routine HIV testing among reported cases are sampled from  a normal distribution, using the variance of the sample number of the number who tested HIV positive. 
 
-For countries with no data, a range for p(2) was estimated from countries with survey or testing data, which suggest that $p(2) = 1.96 [1.8-2.1]$. The RR-model was then fitted to total TB incidence only. There is no satisfactory way to verify results for TB incidence among people living with HIV when no HIV-testing data are available. However, comparison of the global estimate for TB incidence among people living with HIV produced by Spectrum and estimates based on a different method using HIV prevalence instead of CD4 distributions and using  HIV-test data in a different way) suggests that the RR-model works reasonably well. The comparative method to disaggregate TB incidence by HIV is derived as follows, where the $I$ and $N$ denote incident cases and the total population, respectively, superscripts + and - denote HIV status, $t$ is the prevalence of HIV among new TB cases, $h$ is the prevalence of HIV in the general population and $\rho$ is the incidence rate ratio (HIV-positive over HIV-negative).
+For countries with no data, a range for p(2) was estimated from countries with survey or testing data, which suggest that $p(2) = 1.96 [1.8-2.1]$. The RR-model was then fitted to total TB incidence only. There is no satisfactory way to verify results for TB incidence among people living with HIV when no HIV-testing data are available. However, comparison of the global estimate for TB incidence among people living with HIV produced by Spectrum and estimates based on a different method using HIV prevalence instead of CD4 distributions and using  HIV-test data in a different way) suggests that the RR-model works reasonably well. The comparative method to disaggregate TB incidence by HIV is derived as follows, where the $I$ and $N$ denote incident cases and the total population, respectively, superscripts + and - denote HIV status, $\vartheta$ is the prevalence of HIV among new TB cases, $h$ is the prevalence of HIV in the general population and $\rho$ is the incidence rate ratio (HIV-positive over HIV-negative).
 
 \begin{equation}
 \begin{align}
 \rho &= \frac{I^+/N^+}{I^-/N^-} > 1    \\
 \rho \frac{I^-}{I^+} &= \frac{N^-}{N^+}  \\
 \rho \frac{I - I^+}{I^+} &= \frac{N - N^+}{N^+} \\
-\frac{I^+}{I} &= \frac{\rho \frac{N^+}{N}}{1 + (\rho - 1)\frac{N^+}{N}} = t \\
-t &= \frac{h \rho}{1 + h(\rho - 1)}
+\frac{I^+}{I} &= \frac{\rho \frac{N^+}{N}}{1 + (\rho - 1)\frac{N^+}{N}} = \vartheta \\
+\vartheta &= \frac{h \rho}{1 + h(\rho - 1)}
 \label{eqn:rho}
 \end{align}
 \end{equation}
@@ -66,7 +66,7 @@ t &= \frac{h \rho}{1 + h(\rho - 1)}
 The TB incidence rate ratio $\rho$ is estimated by fitting the following linear model with a slope constrained to 1:
 
 \begin{align}
-\log(\hat{\rho}) = \log \left(\frac{t}{1-t}\right) - \log \left(\frac{h}{1-h}\right), (t, h) \in ]0,1[
+\log(\hat{\rho}) = \log \left(\frac{\vartheta}{1-\vartheta}\right) - \log \left(\frac{h}{1-h}\right), (\vartheta, h) \in ]0,1[
 \label{eqn:irr}
 \end{align}
 
