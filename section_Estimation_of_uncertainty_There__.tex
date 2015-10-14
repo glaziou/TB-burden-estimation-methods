@@ -10,16 +10,16 @@ Missing national aggregates of new and recurrent cases were imputed by interpola
 Mortality estimates incorporated the following sources of uncertainty: sampling uncertainty in the underlying measurements of TB mortality rates from data sources, uncertainty in estimates of incidence rates and rates of HIV prevalence among both incident and notified TB cases, and parameter uncertainty in models. Time series of TB mortality were generated for each country through Monte Carlo simulations. 
 Unless otherwise specified, uncertainty bounds and ranges were defined as the 2.5th and 97.5th centiles of outcome distributions. Throughout this report, ranges with upper and lower bounds defined by these centiles are provided for all estimates established with the use of simulations. When uncertainty was established with the use of observed or other empirical data, 95\% confidence intervals are reported.
  
-The model used the following steps: 
+The model used  the following steps: 
 
 \begin{enumerate}
-\item Overall TB incidence estimation after review and cleaning of case notification data;
-\item cleaning and adjustment of raw mortality data from VR systems and mortality surveys, followed by imputation of missing values in countries with VR or survey data – in some countries, step 1 was updated to account for mortality data;
+\item Estimating overall TB incidence after review and cleaning of case notification data;
+\item cleaning and adjusting raw mortality data from VR systems and mortality surveys, followed by imputation of missing values in countries with VR or survey data – in some countries, step 1 was updated to account for mortality data;
 \item cleaning of measurements of HIV prevalence among TB patients followed by estimating HIV-positive TB incidence using the Spectrum programme and HIV-positive TB mortality;
-\item estimation of HIV prevalence among incident cases of TB through modelling in countries with no measurements;
-\item estimation of HIV-negative TB mortality in countries with no VR data followed with an update of step 1 in some countries; 
-\item review of prevalence measurements, adjustments for childhood TB and bacteriologically unconfirmed TB,  and estimation of prevalence followed with an update of step 1 in some countries; 
-\item estimation of incidence and mortality disaggregated by age and sex and disaggregated by drug resistance status.
+\item estimating HIV-negative TB mortality in countries with no VR data followed with an update of step 1 in some countries; 
+\item reviewing prevalence measurements, adjusting for childhood TB and bacteriologically unconfirmed TB,  and estimating prevalence followed with an update of step 1 in some countries; 
+\item estimating incidence and mortality disaggregated by age and sex and disaggregated by drug resistance status;
+\item estimating MDR-TB incidence and mortality.
 \end{enumerate}
 
 The general approach to uncertainty analyses was to draw values from specified distributions for every parameter (except for notifications and population values) in Monte Carlo simulations, with the number of simulation runs set so that they were sufficient to ensure stability in the outcome distributions. For each country, the same random generator seed was used for every year, and errors were assumed to be time-dependent within countries (thus generating autocorrelation in time series). Regional parameters were used in some instances (for example, for CFRs). Summaries of quantities of interest were obtained by extracting the mean, $2.5^{th}$ and $97.5^{th}$ centiles of posterior distributions. Wherever possible, uncertainty was propagated analytically by approximating the moments of functions of random variables using second-order Taylor series expansion\cite{Ku_1966} – such as when taking the product or the ratio of two random variables – rather than through Monte Carlo simulations, in order to shorten computing time. 
