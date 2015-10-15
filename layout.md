@@ -15,6 +15,7 @@ subsubsection_Disaggregation_by_age_and__.tex
 figures/figure2.4.1_map_age_disaggregation/figure2.4.1_map_age_disaggregation.png
 While_there_are_some_nationwide__.tex
 figures/ensemble_children_incidence/ensemble_children_incidence.png
+textbf_TB_incidence_disaggregated_by__.tex
 section_Prevalence_subsection_Population_based__.tex
 figures/PScountries/PScountries.png
 subsection_Indirect_estimates_Indirect_estimates__.tex
