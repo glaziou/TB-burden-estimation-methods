@@ -3,7 +3,7 @@
 
 In this report, TB incidence is disaggregated by HIV-infection status at country level. TB incidence was disaggregated by HIV and CD4 status using the Spectrum software\cite{Stover2012}. WHO estimates of TB incidence were used as inputs to the Spectrum HIV model. The model was fitted to WHO estimates of TB incidence, and then used to produce estimates of TB incidence among people living with HIV disaggregated by CD4 category\cite{Pretorius2014}. A regression method was used to estimate the relative risk (RR) for TB incidence according to the CD4 categories used by Spectrum for national HIV projections\cite{J2010}. Spectrum data were based on the national projections prepared for the UNAIDS Report on the global AIDS epidemic 2013. The model can also be used to  estimate TB mortality among HIV-positive people, the resource requirements associated with  recently updated guidance on ART and the impact of ART expansion. 
 
-A flexible and relatively simple way of modelling TB incidence (or any time-dependent function) is to represent it as k time-dependent m’th order spline functions:
+A flexible and relatively simple way of modelling TB incidence (or any time-dependent function) is to represent it as k time-dependent m’th order spline functions
 
 \begin{align*}
 I(x) = \sum_{i=1 .. k} \beta_i B^m i(x)
@@ -11,7 +11,7 @@ I(x) = \sum_{i=1 .. k} \beta_i B^m i(x)
 
 where $\beta_i$ is the i'th spline coefficient and $B^m i(x)$ represents the evaluation of the i-th basis function at time (year) $x$. The order of each basis function is m and cubic splines are used, i.e. $m=3$. The equation simply states that any time-dependent function, such as incidence, can be represented as a linear combination of cubic-spline basis functions.
 
-The values of the cubic-spline coefficients $\beta$ were determined by an optimization routine that minimizes the least squares error between incidence data ($I_{obs}$) and the estimated incidence curve $I(x)$:
+The values of the cubic-spline coefficients $\beta$ were determined by an optimization routine that minimizes the least squares error between incidence data ($I_{obs}$) and the estimated incidence curve $I(x)$
 
 \begin{align*}
 I(x) = \sum_{x = 1990 .. 2012} | I(x) - I_{obs} (x)|^2 + \lambda \beta^T S \beta
@@ -25,7 +25,7 @@ The disaggregation of TB incidence by CD4 category among people living with HIV 
 
 The Spectrum-TB model’s disaggregation method is based on the Williams et al. model. The model first estimates incidence among people living with HIV, and then calculates the ‘risk of TB’ $F=I^- / P^-$, where $I^-$ is TB incidence among people living with HIV and $P^-$ is the number of people living with HIV who are susceptible to TB.
 
-An assumption is made that the risk of TB infection among people living with HIV with CD4 count $>$ 500 μL is proportional to F (it was assumed that it was higher by a factor of 2.5).\cite{15609223} For each $100\mu l$ CD4 decline in the remaining categories (350-499, 250-349, 200-249, 100-199, 50-99 CD4 cells/μL, and CD4 count less than 50 cells μL), the risk of infection is represented as:
+An assumption is made that the risk of TB infection among people living with HIV with CD4 count $>$ 500 μL is proportional to F (it was assumed that it was higher by a factor of 2.5).\cite{15609223} For each $100\mu l$ CD4 decline in the remaining categories (350-499, 250-349, 200-249, 100-199, 50-99 CD4 cells/μL, and CD4 count less than 50 cells μL), the risk of infection is represented as
 
 \begin{align*}
 F(c<500) = F(c>500).p(1).p(2)dc
@@ -64,7 +64,7 @@ For countries with no data, a range for p(2) was estimated from countries with s
 \end{align}
 \end{equation}
 
-The TB incidence rate ratio $\rho$ is estimated by fitting the following linear model with a slope constrained to 1:
+The TB incidence rate ratio $\rho$ is estimated by fitting the following linear model with a slope constrained to 1
 
 \begin{align}
 \log(\hat{\rho}) = \log \left(\frac{\vartheta}{1-\vartheta}\right) - \log \left(\frac{h}{1-h}\right), (\vartheta, h) \in {]0,1[}
