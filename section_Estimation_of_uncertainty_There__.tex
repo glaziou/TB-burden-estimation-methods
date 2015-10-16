@@ -27,8 +27,8 @@ The general approach to uncertainty analyses was to draw values from specified d
 Wherever possible, uncertainty was propagated analytically by approximating the moments of functions of random variables using higher-order Taylor series expansion\cite{Ku_1966}, using a matrix based approach\cite{Lab1998-dy} illustrated with the following transformations based on two variables $x_1$ and $x_2$ with known distributions so that $y = f(x_i)$ 
 
 \begin{align*}
-$E[y] &= f(\bar{x_i})$ \\
-$\sigma^2_y &= \nabla_x C_x \nabla^T_x=\left(\sum_{i=1}^{2}\frac{\partial{f}}{\partial{x_i}}\sigma_i\right)^2$
+E[y] &= f(\bar{x_i}) \\
+\sigma^2_y &= \nabla_x C_x \nabla^T_x=\left(\sum_{i=1}^{2}\frac{\partial{f}}{\partial{x_i}}\sigma_i\right)^2
 \end{align*}
 
 where $E(y)$ denotes the expectation of $y$, $\sigma^2 y$ is the variance of $y$, $\nabla_x$ is the $p \times n$ gradient matrix with all partial first derivatives, $C_x$ = the $p \times p$ covariance matrix. 
