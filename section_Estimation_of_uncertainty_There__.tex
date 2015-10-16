@@ -24,7 +24,8 @@ The model used  the following steps:
 
 The general approach to uncertainty analyses was to draw values from specified distributions for every parameter (except for notifications and population values) in Monte Carlo simulations, with the number of simulation runs set so that they were sufficient to ensure stability in the outcome distributions. For each country, the same random generator seed was used for every year, and errors were assumed to be time-dependent within countries (thus generating autocorrelation in time series). Regional parameters were used in some instances (for example, for CFRs). Summaries of quantities of interest were obtained by extracting the mean, $2.5^{th}$ and $97.5^{th}$ centiles of posterior distributions. Wherever possible, uncertainty was propagated analytically by approximating the moments of functions of random variables using higher-order Taylor series expansion\cite{Ku_1966}, using a matrix based approach\cite{Lab1998-dy} illustrated with the following transformations based on two variables $x_1$ and $x_2$.
 
-First-order mean: $E[y] = f(\hbar{x_i}$
+First-order mean: $E[y] = f(\bar{x_i})$
+First-order variance: $\sigma^2_y=\grad_x C_x \grad^T_x=\left(\Sum{i=1}{2}\frac{\partial{f}}{\partial{x_i}}\sigma_i\right)^2$
 
 
 
