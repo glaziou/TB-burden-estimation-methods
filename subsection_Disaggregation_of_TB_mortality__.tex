@@ -4,12 +4,12 @@
 
 From the age-specific adjusted (for coverage and ill-defined causes) number of deaths from VR, we first estimated the ratio $r_2$ of rates in children ($M_{0-14}$) compared to adults ($M_{15+}$) (\ref{eqn:r2}). The overall mortality rate for all ages ($M$) can be expressed as a weighted average of mortality in children and adults, where $c$ is the proportion of children among the general population (\ref{eqn:M}).
 
-\begin{subequation}
+\begin{equation}
 \begin{align}
 r_2 &= \frac{M_{0-14}}{M_{15+}} \label{eqn:r2} \\
 M &= c M_{0-14} + (1 - c) M_{15+} \label{eqn:M}
 \end{align}
-\end{subequation}
+\end{equation}
 
 In countries with VR or mortality survey data, $M_{0-14}$ is directly measured. For countries without VR data, an imputation step is necessary where the ratio $r_2$ is predicted from a regression model with risk factors known to be associated with TB. For the sex disaggregation of TB mortality among adults ($M_{15+}$), we use sex-specific adjusted (for coverage and ill-defined causes) number of deaths from VR to estimate mortality rates in men $M_m$  and women $M_w$ (\ref{eqn:mm}). The ratio of these rates $r_3$ (\ref{eqn:r3}) is either directly measured in countries with VR data or imputed in countries without.
 
