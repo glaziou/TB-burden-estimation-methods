@@ -4,21 +4,21 @@
 
 From the age-specific adjusted (for coverage and ill-defined causes) number of deaths from VR, we first estimated the ratio $r_2$ of rates in children ($M_{0-14}$) compared to adults ($M_{15+}$) (\ref{eqn:r2}). The overall mortality rate for all ages ($M$) can be expressed as a weighted average of mortality in children and adults, where $c$ is the proportion of children among the general population (\ref{eqn:M}).
 
-\begin{equation}
+
 \begin{align}
 r_2 &= \frac{M_{0-14}}{M_{15+}} \label{eqn:r2} \\
 M &= c M_{0-14} + (1 - c) M_{15+} \label{eqn:M}
 \end{align}
-\end{equation}
 
-In countries with VR or mortality survey data, $M_{0-14}$ is directly measured. For countries without VR data, an imputation step is necessary where the ratio $r_2$ is predicted from a regression model with risk factors known to be associated with TB. For the sex disaggregation of TB mortality among adults ($M_{15+}$), we use sex-specific adjusted (for coverage and ill-defined causes) number of deaths from VR to estimate mortality rates in men $M_m$  and women $M_w$ (\ref{eqn:mm}). The ratio of these rates $r_3$ (\ref{eqn:r3}) is either directly measured in countries with VR data or imputed in countries without.
 
-\begin{equation}
+In countries with VR or mortality survey data, $M_{0-14}$ is directly measured. For countries without VR data, an imputation step is necessary where the ratio $r_2$ is predicted from a regression model with risk factors known to be associated with TB. The following variables were investigated for inclusion in the model: infant mortality rate per 1000 live births; gross domestic product per capita; HIV prevalence among the general population; the percentage of the total population aged <15 and ≥65 years; the TB treatment suc­cess rate; the total number of newly notified TB cases per year; whether or not a country had a high or low burden of MDR-TB; whether a country was among the 22 HBCs or not. For the sex disaggregation of TB mortality among adults ($M_{15+}$), we use sex-specific adjusted (for coverage and ill-defined causes) number of deaths from VR to estimate mortality rates in men $M_m$  and women $M_w$ (\ref{eqn:mm}). The ratio of these rates $r_3$ (\ref{eqn:r3}) is either directly measured in countries with VR data or imputed in countries without.
+
+
 \begin{align}
 M_{15+} &= M_w + M_m \label{eqn:mm} \\
 r_3 &= \frac{M_m}{M_w} \label{eqn:r3}
 \end{align}
-\end{equation}
+
 
 
 \subsubsection{TB deaths among HIV-positive people}
